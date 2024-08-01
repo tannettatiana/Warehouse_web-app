@@ -1,0 +1,248 @@
+*{
+    /*box-sizing: border-box;*/
+}
+
+@font-face{
+    font-family: 'Consolas';
+    /*src: url('../font/Roboto-Regular.ttf') format('truetype');*/
+}
+
+:root{
+    --main-font-color: rgb(0, 0, 0);
+    --main-bg-color: rgb(239, 254, 254);
+}
+
+a:hover{
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.menu a:hover{
+    background-color: #A6E3E9;
+}
+
+
+
+input:hover{
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+
+body{
+    margin: 0;
+    text-decoration-color: var(--main-font-color);
+    background-color: var(--main-bg-color);
+    overflow: no-display;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    padding: 0 0 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container{
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.input[name="login"]{
+    margin: 0px 0px 0px 11px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    background-color: #A6E3E9;
+}
+
+.header-inner{
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header-title{
+    display: flex;
+}
+
+.header-subtitle{
+    font-size: 22px;
+}
+
+.header-profile{
+    margin-right: 20px;
+}
+
+
+/*login*/
+.header-inner-auth{
+    justify-content: center;
+}
+
+.auth-inner{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    min-width: 60%;
+}
+
+
+.auth-block-login{
+    margin-bottom: 10px;
+}
+
+.auth-login-title{
+    margin-bottom: 5px;
+}
+
+.auth-block-password{
+    margin-bottom: 20px;
+}
+
+.auth-password-title{
+    margin-bottom: 5px;
+}
+
+.submitButton{
+    margin: auto;
+    background-color: rgb(37, 106, 109);
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+}
+
+.auth-block-button{
+    display: flex;
+    
+}
+
+/*main-admin*/
+a.logout{
+	margin: 0px 10px 0px 0px;
+	font-size: 15px;
+	padding: 0px;
+}
+
+.userMenu {
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* очистить float */
+}
+.userMenu li {
+  clear: both;
+  display: inline; /* Отображать как строчный элемент */
+}
+.userMenu span {
+  float: right;
+  white-space: nowrap; /* текст не будет переноситься на другую строку */
+  margin-top: 10px;
+}
+
+.menuButton{
+	border-radius: 5px;
+	padding: 7px 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color:rgb(37, 106, 109);
+	color: white;
+	border: 0px;
+	font-style: bold;
+}
+
+.menuButtonInactive{
+	border-radius: 5px;
+	padding: 7px 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-color:rgb(128, 128, 128);
+	color: white;
+	border: 0px;
+	font-style: bold;
+	cursor: default;
+}
+
+/*allUsers*/
+table {
+  background: #CBF1F5;
+  border-radius: 0.25em;
+  border-collapse: collapse;
+  margin: 1em;
+  min-width: 60%;
+  
+}
+.tableDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+th {
+  border-bottom: 1px solid #364043;
+  color: rgb(0, 0, 64);
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+td {
+  color: rgb(0, 0, 64);
+  font-weight: 400;
+  padding: 0.65em 1em;
+  text-align: center;
+}
+.disabled td {
+  color: #4F5F64;
+}
+tbody tr {
+  transition: background 0.25s ease;
+}
+tbody tr:hover {
+  background: #A6E3E9;
+}
+
+/*delete user*/
+.deletingLogin{
+	padding: 10px;
+}
+
+.deleteUserBlock{
+	margin: 20px 10px;
+}
+
+h3{
+	margin-bottom: 10px;
+}
+
+a.enter{
+	text-decoration: underline;
+}
+
+select{
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px black solid;
+}
+/*adding User*/
+/*.userBlock{
+	display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+}*/
+
